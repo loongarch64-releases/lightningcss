@@ -1,9 +1,10 @@
-FROM lcr.loongnix.cn/library/rust:1.95.0-alpine3.22
+FROM lcr.loongnix.cn/library/rust:1.97.0-alpine3.24
 
 RUN apk add --no-cache \
     git \
+    bash \
     ca-certificates \
     musl-dev \
     build-base
 
-CMD ["/bin/sh"]
+CMD ["/bin/bash"]
