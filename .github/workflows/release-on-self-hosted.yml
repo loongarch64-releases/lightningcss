@@ -1,6 +1,8 @@
 name: Auto Build lightningcss (Self-hosted)
 
 on:
+  schedule:
+    - cron: '24 13 * * *'
   workflow_dispatch:
 
 env:
